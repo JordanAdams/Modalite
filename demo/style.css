@@ -1,0 +1,62 @@
+html {
+	background: #f8f8f8;
+}
+
+body {
+	background: #fff;
+	border: solid 1px #aaa;
+	width: 150px;
+	margin: 50px auto;
+	font: 10pt arial;
+	border-radius: 3px;
+}
+
+/* === Header */
+header {
+	background: #fbfbfb;
+	border-bottom: solid 1px #ccc;
+	padding: 5px;
+	text-align: center;
+	border-radius: 3px 3px 0px 0px;
+}
+
+h1 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 140%;
+	color: #c32f45;
+}
+
+h1 small {
+	font-size: 80%;
+	color: #888;
+}
+
+
+
+/* === Content */
+#content {
+	padding: 5px;
+}
+
+
+
+/* === Footer */
+footer {
+	background: #fbfbfb;
+	border-top: solid 1px #ccc;
+	padding: 5px;
+	text-align: center;
+	font-size: 70%;
+	color: #888;
+	border-radius: 0px 0px 3px 3px;
+}
+
+footer a {
+	color: #c32f45;
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
