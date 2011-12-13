@@ -39,6 +39,10 @@ h1 small {
 	padding: 5px;
 }
 
+.modal_trigger {
+	cursor: -webkit-zoom-in;
+}
+
 
 
 /* === Footer */

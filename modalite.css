@@ -6,21 +6,19 @@
  * Github Repo: url(http://github.com/JordanAdams/Modalite);
 */
 
+
+
+/* === BASE */
 .modalite_modal {
 	position: fixed;
-	top: 10px;
-	left: 10px;
-	background: #fff;
-	border: solid 1px #aaa;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, .25);
-	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, .25);
+	top: 0px;
+	left: 0px;
 	padding: 5px;
-	border-radius: 3px;
 	display: none;
+	border-radius: 3px;
 }
 
 .modalite_overlay {
-	background: #fff;
 	position: fixed;
 	top: 0px;
 	left: 0px;
@@ -28,12 +26,10 @@
 }
 
 .modalite_modal_close {
-	background: #fafafa;
-	border-radius: 0px 0px 3px 3px;
-	border-top: solid 1px #aaa;
 	margin: 5px -5px -5px -5px;
 	padding: 5px 10px;
 	text-align: right;
+	border-radius: 0px 0px 3px 3px;
 }
 
 .modalite_modal_close a {
@@ -45,4 +41,110 @@
 
 .modalite_modal_close a:hover {
 	color: #666;
+}
+
+
+
+/* === LIGHT THEME */
+.modalite_modal.theme_light {
+	color: #222;
+	background: #fff;
+	border: solid 1px #aaa;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, .25);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, .25);
+}
+
+.modalite_modal_close.theme_light {
+	background: #fafafa;
+	border-top: solid 1px #aaa;
+}
+
+.modalite_modal_close.theme_light {
+	color: #888;
+}
+
+.modalite_modal_close.theme_light a:hover {
+	color: #666;
+}
+
+.modalite_overlay.theme_light {
+	background: #fff;
+}
+
+
+
+/* === DARK THEME */
+.modalite_modal.theme_dark {
+	color: #fff;
+	background: #444;
+	border: solid 1px #aaa;
+	box-shadow: 0px 0px 72px 0px rgba(255, 255, 255, 0.15), 
+		0px 2px 5px rgba(0, 0, 0, 0.75);
+}
+
+.modalite_modal_close.theme_dark {
+	background: #333;
+	border-top: solid 1px #111;
+}
+
+.modalite_modal_close.theme_dark {
+	color: #ddd;
+}
+
+.modalite_modal_close.theme_dark a:hover {
+	color: #fff;
+}
+
+.modalite_overlay.theme_dark {
+	background: #000;
+}
+
+
+
+/* === FACEBOOK THEME */
+.modalite_modal.theme_facebook {
+	background: rgba(82, 82, 82, 0.7);
+	border-radius: 8px;
+	padding: 10px;
+}
+
+.modalite_modal_facebook {
+	color: #333;
+	background: #fff;
+	border: solid 1px #555;
+	border-radius: 0px;
+	font: 11px "lucida grande",tahoma,verdana,arial,sans-serif;
+	padding: 10px;
+	z-index: 999;
+}
+
+.modalite_modal_close.theme_facebook {
+	background: #f2f2f2;
+	border-top: solid 1px #ccc;
+	padding: 8px 10px;
+	border-radius: 0px;
+	margin: 10px -10px -10px -10px;
+}
+
+.modalite_modal_close.theme_facebook a {
+	font-size: 13px;
+	color: #fff;
+	background: #5971a7;
+	padding: 2px 6px;
+	display: inline-block;
+	border: solid 1px #29447e;
+	border-botttom: solid 1px #1a356e;
+	box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.25), 0px 1px 0px rgba(0, 0, 0, 0.25);
+}
+
+.modalite_modal_close.theme_facebook a:active {
+	color: #fff;
+	background: #4f6aa3;
+	box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15);
+	border: solid 1px #29447e;
+}
+
+.modalite_overlay.theme_facebook {
+	background: transparent;
+	z-index: 888;
 }
