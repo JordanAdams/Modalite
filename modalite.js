@@ -41,28 +41,18 @@
 
 
 		// Add Theme
+		$('.modalite_modal').addClass('theme_' + settings.theme);
+		$('.modalite_modal_close').addClass('theme_' + settings.theme);
+		$('.modalite_overlay').addClass('theme_' + settings.theme);
+
+		// Extra Theme Stuff
 		switch (settings.theme) {
-			case 'light':
-				$('.modalite_modal').addClass('theme_light');
-				$('.modalite_modal_close').addClass('theme_light');
-				$('.modalite_overlay').addClass('theme_light');
-			break;
-			
-			case 'dark':
-				$('.modalite_modal').addClass('theme_dark');
-				$('.modalite_modal_close').addClass('theme_dark');
-				$('.modalite_overlay').addClass('theme_dark');
-			break;
 			
 			case 'facebook':
-				$('.modalite_modal').addClass('theme_facebook');
-				$('.modalite_modal_close').addClass('theme_facebook');
-				$('.modalite_overlay').addClass('theme_facebook');
-
 				$('.modalite_modal_close a').text('Close');
 				$('.modalite_modal').children().wrapAll('<div class="modalite_modal_facebook" />');
-
 			break;
+
 		}
 
 
