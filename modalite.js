@@ -1,7 +1,7 @@
 /*
  * Author = "Jordan Adams";
  * Twitter = "@JordanCallumA";
- * Version = 1.0;
+ * Version = 1.2;
  * Requirements = ["jQuery x.x", "modalite.css"];
  * Github Repo = "http://github.com/JordanAdams/Modalite";
 */
@@ -13,20 +13,31 @@
 		// Build Settings
 		defaults = {
 			theme: 'light',
-			width: 300
+			width: 300,
+			remote: false
 		};
 		
 		settings = {};
 		settings = $.extend(defaults, options);
 
-		
+
 		// Create DOM Elems
 		$('body').append(
 			'<div class="modalite_overlay"></div>'
 			+'<div class="modalite_modal">'
-				+ content
+				+ '<div class="modalite_content">'+content+'</div>'
 				+'<div class="modalite_modal_close"><a href="#">&#10005; Close</div>'
-			+'</div>');
+			+'</div>'
+		);
+
+
+		// Add Remote Content?
+		if(settings.remote) {
+
+			$('.modalite_content').html('');
+			$('.modalite_content').load(content);
+
+		}
 
 
 		// Add Theme
